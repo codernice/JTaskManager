@@ -1,0 +1,12 @@
+﻿/*文本框和下拉框选中时边框颜色*/
+.vail .form-control:focus {
+    border-color: cornflowerblue;
+}
+/*红框提示*/
+.vail .border-color-red {
+    border-color: red;
+}
+.vail label.require:before {
+    content: '*';
+    color:red;
+}

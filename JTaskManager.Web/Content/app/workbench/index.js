@@ -1,0 +1,2 @@
+"use strict";define(function(require,exports,module){var t={data:function(){return{}},created:function(){},methods:{},components:{}};t.template='<div style="width:100%; text-align:center">欢迎使用任务管理系统</div>',module.exports=t});
+//# sourceMappingURL=map/index.js.map

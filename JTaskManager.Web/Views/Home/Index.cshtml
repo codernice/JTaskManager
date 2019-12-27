@@ -1,0 +1,36 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- vue -->
+<script type="text/javascript" src="~/Content/sea.js"></script>
+<script type="text/javascript" src="~/Content/dist/js/vue.js"></script>
+<script type="text/javascript" src="~/Content/dist/js/vue-router.js"></script>
+<script>
+    seajs.use('app/index');
+</script>
+<style>
+    .modal-body select {
+        margin-left: 10px;
+    }
+</style>
+<div id="app">
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>{{pageTitle}}</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        @*<li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active">jsGrid</li>*@
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- 路由出口 -->
+    <!-- 路由匹配到的组件将渲染在这里 -->
+    <router-view></router-view>
+</div>
